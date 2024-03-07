@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export function About() {
   return (
-    <div className="pb-16 bg-gradient-to-r from-blue-350 to-blue-750 lg:pb-0 lg:z-10 lg:relative">
+    <div className="pb-16 bg-gradient-to-r from-rbr-350 to-rbr-750 lg:pb-0 lg:z-10 lg:relative">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
         <div className="relative lg:-my-8">
           <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />

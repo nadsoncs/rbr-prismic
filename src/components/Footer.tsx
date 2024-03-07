@@ -8,13 +8,13 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-blue-700">
+    <footer className="bg-rbr-750">
       <div
         className="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-24"
       >
         <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8">
           <a
-            className="inline-block p-2 shadow sm:p-3 lg:p-4 border border-blue-350 text-base font-medium rounded-full text-white bg-transparent hover:scale-105 transform transition duration-300 ease-out"
+            className="inline-block p-2 shadow sm:p-3 lg:p-4 border border-rbr-350 text-base font-medium rounded-full text-white bg-transparent hover:scale-105 transform transition duration-300 ease-out"
             href="#MainContent"
           >
             <span className="sr-only">Back to top</span>
@@ -61,25 +61,25 @@ export function Footer() {
             className="flex flex-wrap justify-center gap-6 lg:justify-end md:gap-8 lg:gap-12"
           >
             <li>
-              <a className="text-2xl text-white transition hover:text-blue-250" href="#">
+              <a className="text-2xl text-white transition hover:text-rbr-250" href="#">
                 <IoLogoInstagram  />
               </a>
             </li>
 
             <li>
-              <a className="text-2xl text-white transition hover:text-blue-250" href="#">
+              <a className="text-2xl text-white transition hover:text-rbr-250" href="#">
                 <IoLogoFacebook/>
               </a>
             </li>
 
             <li>
-              <a className="text-2xl text-white transition hover:text-blue-250" href="#">
+              <a className="text-2xl text-white transition hover:text-rbr-250" href="#">
                 <IoLogoLinkedin/>
               </a>
             </li>
 
             <li>
-              <a className="text-2xl text-white transition hover:text-blue-250" href="#">
+              <a className="text-2xl text-white transition hover:text-rbr-250" href="#">
                 <IoLogoWhatsapp/>
               </a>
             </li>

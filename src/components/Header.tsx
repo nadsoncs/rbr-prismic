@@ -10,7 +10,7 @@ const navigation = [
 export function Header() {
   return (
     <header className="relative">
-      <div className="bg-blue-700 py-6">
+      <div className="bg-rbr-500 py-6">
         <nav
           className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
           aria-label="Global"
@@ -41,7 +41,7 @@ export function Header() {
             </div>
 
             <div className="hidden md:flex md:items-center md:space-x-6">
-              <Link href="#" className="w-40 justify-center inline-flex items-center px-4 py-2 border border-blue-350 text-base font-medium rounded-full text-white bg-transparent hover:scale-105 transform transition duration-300 ease-out">
+              <Link href="#" className="w-40 justify-center inline-flex items-center px-4 py-2 border border-rbr-350 text-base font-medium rounded-full text-white bg-transparent hover:scale-105 transform transition duration-300 ease-out">
                 Fale Conosco
               </Link>
             </div>

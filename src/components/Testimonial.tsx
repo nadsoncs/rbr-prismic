@@ -8,11 +8,11 @@ export function Testimonial() {
         </p>
         <div className="my-16">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="bg-blue-200 rounded-lg px-6 pb-8">
+            <div className="bg-rbr-250 rounded-lg px-6 pb-8">
               <blockquote>
                 <div>
                   <svg
-                    className="h-12 w-12 text-blue-700 opacity-25"
+                    className="h-12 w-12 text-rbr-750 opacity-25"
                     fill="currentColor"
                     viewBox="0 0 32 32"
                     aria-hidden="true"
@@ -24,14 +24,14 @@ export function Testimonial() {
                   </p>
                 </div>
                 <footer className="mt-6 content-start">
-                  <p className="text-base font-bold text-blue-700 text-left">Fulana de Tal</p>
+                  <p className="text-base font-bold text-rbr-750 text-left">Fulana de Tal</p>
                   <p className="text-base font-medium text-gray-500 text-left">CEO Empresa X</p>
                 </footer>
               </blockquote>
             </div>
           </div>
         </div>
-        <h2 className="text-base font-semibold tracking-wider text-sky-900 uppercase">Empresas que confiam</h2>
+        <h2 className="text-base font-semibold tracking-wider text-rbr-950 uppercase">Empresas que confiam</h2>
         
 
         <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
