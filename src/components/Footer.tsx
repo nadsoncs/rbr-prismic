@@ -6,7 +6,10 @@ import {
   IoLogoWhatsapp,
 } from "react-icons/io5";
 
-export function Footer() {
+interface FooterProps {
+  addr: string;
+}
+export function Footer({ addr }: FooterProps) {
   return (
     <footer className="bg-rbr-750">
       <div
@@ -49,8 +52,7 @@ export function Footer() {
           <p
             className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-300 lg:text-left"
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            consequuntur amet culpa cum itaque neque.
+            { addr }
           </p>
         </div>
 
@@ -88,7 +90,7 @@ export function Footer() {
         </div>
 
         <p className="mt-12 text-sm text-center text-gray-300 lg:text-right">
-          Copyright &copy; 2022 - RBR Engenharia. Todos os direitos reservados.
+          {`Copyright &copy; ${ new Date().getFullYear() } - RBR Engenharia. Todos os direitos reservados.`}
         </p>
       </div>
     </footer>

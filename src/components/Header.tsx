@@ -7,7 +7,11 @@ const navigation = [
   { name: 'Depoimentos', href: '#' },
   { name: 'Portfólio', href: '#' },
 ]
-export function Header() {
+
+interface HeaderProps {
+  phone: string;
+}
+export function Header({ phone }: HeaderProps) {
   return (
     <header className="relative">
       <div className="bg-rbr-500 py-6">
@@ -41,7 +45,7 @@ export function Header() {
             </div>
 
             <div className="hidden md:flex md:items-center md:space-x-6">
-              <Link href="#" className="w-40 justify-center inline-flex items-center px-4 py-2 border border-rbr-350 text-base font-medium rounded-full text-white bg-transparent hover:scale-105 transform transition duration-300 ease-out">
+              <Link href={`https://wa.me/55${phone}`} className="w-40 justify-center inline-flex items-center px-4 py-2 border border-rbr-350 text-base font-medium rounded-full text-white bg-transparent hover:scale-105 transform transition duration-300 ease-out">
                 Fale Conosco
               </Link>
             </div>

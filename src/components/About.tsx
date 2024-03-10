@@ -1,5 +1,11 @@
 import Image from 'next/image';
-export function About() {
+
+interface AboutProps {
+  about: string;
+  aboutBy: string;
+  aboutRole: string;
+}
+export function About({ about, aboutBy, aboutRole}: AboutProps) {
   return (
     <div className="pb-16 bg-gradient-to-r from-rbr-350 to-rbr-750 lg:pb-0 lg:z-10 lg:relative">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
@@ -35,12 +41,12 @@ export function About() {
                 </svg>
                 
                 <p className="mt-6 text-2xl font-medium text-white">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                  {about}
                 </p>
               </div>
               <footer className="mt-6">
-                <p className="text-base font-medium text-white">Jênova Abreu</p>
-                <p className="text-base font-medium text-cyan-100">Engenheira Civil</p>
+                <p className="text-base font-medium text-white">{aboutBy}</p>
+                <p className="text-base font-medium text-cyan-100">{aboutRole}</p>
               </footer>
             </blockquote>
           </div>

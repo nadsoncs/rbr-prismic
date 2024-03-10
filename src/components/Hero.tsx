@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Link from "next/link";
 
-export function Hero() {
+interface HeroProps {
+  slogan: string;
+}
+export function Hero({slogan}: HeroProps) {
   return (
     <div className="bg-rbr-500 pt-10 sm:pt-16 lg:pt-8 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
@@ -15,14 +18,10 @@ export function Hero() {
                 alt=""
               />
               <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                <span className="block">Projeto e construção</span>
                 <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-rbr-250 to-rbr-350 sm:pb-5">
-                  simplificada para todos
+                  {slogan}
                 </span>
               </h1>
-              <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl lg:mb-10">
-                Os engenheiros da RBR são bla bla sdsasdo lasmsdpjs oijasd knmasiuids iojadwe oijaje ajjeeo.
-              </p>
             </div>
           </div>
           <div className="mt-12  lg:m-0">

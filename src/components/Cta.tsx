@@ -1,4 +1,7 @@
-export function Cta(){
+interface CtaProps {
+  phone: string;
+}
+export function Cta({ phone }: CtaProps){
   return (
     <div className="relative bg-gray-50 pb-20">
       <div className="relative">
@@ -10,7 +13,9 @@ export function Cta(){
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="ml-3 inline-flex rounded-md shadow">
-                <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-rbr-750 bg-white hover:bg-indigo-50">Entre em contato</a>
+                <a href={`https://wa.me/${phone}`} className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-rbr-750 bg-white hover:bg-indigo-50">
+                  Entre em contato
+                </a>
               </div>
             </div>
           </div>
